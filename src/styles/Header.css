@@ -1,0 +1,104 @@
+.Header__root {
+  background-color: #ffffff;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.Header__container {
+  padding: 2rem 0;
+}
+
+.Header__logo {
+  font-size: 24px;
+  font-family: 'Pacifico', cursive;
+  letter-spacing: 0.1px;
+  margin: 0;
+}
+
+.Header__logo-link {
+  text-decoration: none;
+  color: #262626;
+}
+
+.Header__logo-link:hover {
+  color: #262626;
+}
+
+.Header__instagram-icon {
+  padding-right: 10px;
+  border-right: 2px solid #dbdbdb;
+  margin-right: 4px;
+}
+
+.Header__nav-group {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Header__nav-link {
+  margin: 0;
+  font-size: 15px;
+}
+
+.Header__nav-link a {
+  text-decoration: none;
+  color: #999;
+}
+
+.Header__nav-icon.fa {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 20px;
+}
+
+.Header__nav-link a:hover,
+.Header__nav-link a:active {
+  color: #262626;
+}
+
+.Header__nav-link .NavLink--active {
+  color: #262626;
+}
+
+.Header__notification-nav {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.main-searchbar {
+    position: absolute;
+    margin-left: 25em;
+    display: block;
+
+}
+.main-searchbar form {
+  margin-bottom: 0;
+}
+
+
+.main-searchbar button {
+    border: none;
+    margin-left: 0px;
+    position: absolute;
+}
+.main-searchbar input[type="search"] {
+  border: 1px solid #f1f1f1;
+  background-color: #f3f3f3;
+  /*width: 177px;
+  padding: 10px 60px;*/
+  width: 15em;
+  padding: 10px 81px;
+}
+.search-logo {
+    position: absolute;
+}
+i.fa.fa-search {
+    margin-top: 11px;
+    margin-left: 3em;
+}
