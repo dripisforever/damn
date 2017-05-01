@@ -4,7 +4,7 @@ export const API_URL = process.env.NODE_ENV === 'production' ?
 
 export const WS_URL =  process.env.NODE_ENV === 'production' ?
                        'wss://views-api.herokuapp.com/api/cable' :
-                       'ws://views-api.herokuapp.com/api/cable';
+                       'wss://views-api.herokuapp.com/api/cable';
 
 // export const API_URL = process.env.NODE_ENV === 'production' ?
 //                      'https://views-api.herokuapp.com/api' :
