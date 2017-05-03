@@ -11,7 +11,7 @@ export const getAvatarUrl = (avatarUrl) => {
 
 // Helper  function for Post picture image
 export const getImageUrl = (imageUrl) => {
-  return imageUrl ? `${process.env.NODE_ENV !== 'production' ? '' : 'http://localhost:5000'}${imageUrl}` : noImage;
+  return imageUrl ? `${process.env.NODE_ENV !== 'production' ? 'http://localhost:5000' : 'http://localhost:5000'}${imageUrl}` : noImage;
 }
 
 // Helper function for pluralization

@@ -170,7 +170,7 @@ class Profile extends React.Component {
       <div className="Profile__root container">
         <div className="row Profile__user-info-container">
           <div className="four columns">
-            <div className="Profile__avatar-img-wrapper">
+            <div className="Profile__avatar-img-wrapper" style={{backgroundImage: `url(${getAvatarUrl(avatarUrl)})`}}>>
               <img
                 src={getAvatarUrl(avatarUrl)}
                 className="Profile__avatar-img"
