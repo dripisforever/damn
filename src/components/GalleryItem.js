@@ -118,12 +118,12 @@ class GalleryItem extends React.Component {
     return (
       <article className="GalleryItem__root">
         <div className="GalleryItem-header">
-          <div className="GalleryItem-header__avatar-container">
-            <img
+          <div className="GalleryItem-header__avatar-container" style={{backgroundImage: `url(${getAvatarUrl(avatarUrl)})`, backgroundSize: 'cover'}}>
+            {/* <img
               src={getAvatarUrl(avatarUrl)}
               className="GalleryItem-header__avatar-img"
               alt={`${username} profile`}
-            />
+            /> */}
           </div>
           <div className="GalleryItem-header__metadata-container">
             <div className="GalleryItem-header__username">
