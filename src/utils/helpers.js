@@ -5,13 +5,13 @@ import noImage from '../images/no-image.jpg';
 export const getAvatarUrl = (avatarUrl) => {
   const facebookAvatarUrl = /http:\/\/graph.facebook.com\//;
   return avatarUrl ?
-  `${(process.env.NODE_ENV !== 'production' && !facebookAvatarUrl.test(avatarUrl)) ? 'http://localhost:5000' : ''}${avatarUrl}` :
+  `${(process.env.NODE_ENV !== 'production' && !facebookAvatarUrl.test(avatarUrl)) ? '' : ''}${avatarUrl}` :
   defaultAvatarImg;
 }
 
 // Helper  function for Post picture image
 export const getImageUrl = (imageUrl) => {
-  return imageUrl ? `${process.env.NODE_ENV !== 'production' ? 'http://localhost:5000' : 'http://localhost:5000'}${imageUrl}` : noImage;
+  return imageUrl ? `${process.env.NODE_ENV !== 'production' ? '' : ''}${imageUrl}` : noImage;
 }
 
 // Helper function for pluralization

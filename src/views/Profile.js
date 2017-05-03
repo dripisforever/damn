@@ -171,11 +171,11 @@ class Profile extends React.Component {
         <div className="row Profile__user-info-container">
           <div className="four columns">
             <div className="Profile__avatar-img-wrapper" style={{backgroundImage: `url(${getAvatarUrl(avatarUrl)})`}}>>
-              <img
+              {/* <img
                 src={getAvatarUrl(avatarUrl)}
                 className="Profile__avatar-img"
                 alt={`${username} profile`}
-              />
+              /> */}
             </div>
           </div>
           <div className="five columns">
