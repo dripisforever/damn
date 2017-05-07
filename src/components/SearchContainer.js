@@ -4,7 +4,7 @@ import SearchBar from './SearchBar';
 import SearchResultsList from './SearchResultsList';
 import { API_URL } from '../config/constants';
 import axios from 'axios';
-import '../styles/Searchbar.css';
+// import '../styles/Searchbar.css';
 class SearchContainer extends React.Component {
   constructor(props) {
     super(props)
