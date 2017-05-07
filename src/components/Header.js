@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 import NavLink from './NavLink';
 import NotificationContainer from '../containers/NotificationContainer';
 import '../styles/Header.css';
-import SearchBar from './SearchBar';
+import SearchContainer from './SearchContainer';
 
 class Header extends React.Component {
   renderNavs() {
@@ -52,7 +52,7 @@ class Header extends React.Component {
               </h1>
             </div>
             <div className="main-searchbar">
-              <SearchBar />
+              <SearchContainer />
             </div>
             <nav className="offset-by-seven two columns">
               {this.renderNavs()}

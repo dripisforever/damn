@@ -1,8 +1,13 @@
 import React from 'react';
-import SearchContainer from './SearchContainer';
+
 class SearchBar extends React.Component {
   constructor(props) {
     super(props);
+    this.handleInputChange = this.handleInputChange.bind(this);
+  }
+
+  handleInputChange(term) {
+    this.props.onSearchTermChange(term);
   }
 
   render() {
@@ -26,9 +31,7 @@ class SearchBar extends React.Component {
     );
   }
 
-  handleInputChange(term) {
-    this.props.onSearchTermChange(term);
-  }
+
 }
 
 export default SearchBar;

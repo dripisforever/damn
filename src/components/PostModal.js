@@ -94,7 +94,7 @@ class PostModal extends React.Component {
               </div>
 
               <div className="PostModal__post-stats">
-                <span>{post.likesCount} {pluralize(post.likesCount, 'like', 'likes')}</span>
+                <span>{post.likesCount} {pluralize(post.likesCount, 'view', 'views')}</span>
               </div>
 
               <div className="PostModal__caption">

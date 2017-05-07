@@ -7,7 +7,7 @@
     @include border-radius($button);
 
     button[type="submit"] {
-      border: 1px solid $border-color;
+      border: 1px solid rgba(0, 0, 0, 0.1);;
       @include border-radius($round);
       width:40px;
       height: 40px;
@@ -109,12 +109,14 @@
 }
 
 #autocomplete-items {
+  position: absolute;
   list-style: none;
   padding: 6px 8px;
   width: 300px;
-  background: $white;
-  border: 1px solid $border-color;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 3px;
+  z-index: 20;
   display: block;
   li {
     padding: 4px 10px;
@@ -124,7 +126,7 @@
       padding: 3px 0 !important;
       overflow: hidden;
       &:hover {
-        background-color: $white;
+        background-color: #ffffff;
         color: $font-black;
       }
     }

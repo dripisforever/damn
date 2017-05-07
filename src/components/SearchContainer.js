@@ -3,7 +3,8 @@ import React from 'react';
 import SearchBar from './SearchBar';
 import SearchResultsList from './SearchResultsList';
 import { API_URL } from '../config/constants';
-
+import axios from 'axios';
+import '../styles/Searchbar.css';
 class SearchContainer extends React.Component {
   constructor(props) {
     super(props)
@@ -17,15 +18,14 @@ class SearchContainer extends React.Component {
 
   search(term) {
     this.setState({ term });
-
-    $.ajax({
-      url: `/${API_URL}/autocomplete.json/?term=${term}`,
+    return axios({
       method: 'GET',
-      success: (data) => { this.setState({
-        posts: data.posts,
-        users: data.users,
-        tags: data.tags
-      });}
+      url: `${API_URL}/users/search?q=${term}`
+    })
+    .then(({data}) => {
+      this.setState({
+        users: data.users
+      });
     });
   }
 
@@ -62,7 +62,7 @@ class SearchContainer extends React.Component {
   }
 
   renderSearchResults() {
-    if(!this.state.showDropdown || (this.state.posts.length === 0 && this.state.users.length === 0 && this.state.tags.length === 0)) {
+    if(!this.state.showDropdown ||  this.state.users.length === 0 ) {
       return;
     }
 
@@ -71,9 +71,7 @@ class SearchContainer extends React.Component {
         setPreventHideDropdown={this.setPreventHideDropdown}
         resetPreventHideDropdown={this.resetPreventHideDropdown}
         term={this.state.term}
-        posts={this.state.posts}
         users={this.state.users}
-        tags={this.state.tags}
       />
     );
   }

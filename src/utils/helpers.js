@@ -1,7 +1,20 @@
 import defaultAvatarImg from '../images/default-avatar.png';
 import noImage from '../images/no-image.jpg';
 
-// Helper function for User avatar image
+// // Helper function for User avatar image DEVELOPMENT MODE
+// export const getAvatarUrl = (avatarUrl) => {
+//   const facebookAvatarUrl = /http:\/\/graph.facebook.com\//;
+//   return avatarUrl ?
+//   `${(process.env.NODE_ENV !== 'production' && !facebookAvatarUrl.test(avatarUrl)) ? 'http://localhost:5000' : ''}${avatarUrl}` :
+//   defaultAvatarImg;
+// }
+//
+// // Helper  function for Post picture image DEVELOPMENT MODE
+// export const getImageUrl = (imageUrl) => {
+//   return imageUrl ? `${process.env.NODE_ENV !== 'production' ? 'http://localhost:5000' : ''}${imageUrl}` : noImage;
+// }
+
+// Helper function for User avatar image PRODUCTION MODE
 export const getAvatarUrl = (avatarUrl) => {
   const facebookAvatarUrl = /http:\/\/graph.facebook.com\//;
   return avatarUrl ?
@@ -9,7 +22,7 @@ export const getAvatarUrl = (avatarUrl) => {
   defaultAvatarImg;
 }
 
-// Helper  function for Post picture image
+// Helper  function for Post picture image PRODUCTION MODE
 export const getImageUrl = (imageUrl) => {
   return imageUrl ? `${process.env.NODE_ENV !== 'production' ? '' : ''}${imageUrl}` : noImage;
 }
