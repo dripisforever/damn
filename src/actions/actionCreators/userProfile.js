@@ -18,7 +18,7 @@ export const userUpdate = ({ username, email, password }, file) => (dispatch, ge
   }
   formData.append('username', username);
   formData.append('email', email);
-  formData.append('password', password);
+  // formData.append('password', password);
 
   return axios({
     method: 'patch',
