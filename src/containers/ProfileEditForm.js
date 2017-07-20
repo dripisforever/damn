@@ -119,5 +119,5 @@ const mapDispatchToProps = (dispatch) => ({
 
 export default reduxForm({
   form: 'ProfileEdit',
-  fields: ['username', 'email']
+  fields: ['username', 'email', 'password', 'avatar']
 }, mapStateToProps, mapDispatchToProps)(ProfileEditForm);

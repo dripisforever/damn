@@ -15,6 +15,7 @@ class SearchResultsList extends React.Component {
 
         {this.renderUserHeading()}
         {this.renderUsers()}
+        {this.renderContents()}
 
       </ul>
     );
