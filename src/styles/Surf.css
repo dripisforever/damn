@@ -1,0 +1,20 @@
+input#search_q, input[type="search"] {
+  /*margin-left: 10em;*/
+  padding-top: 9px;
+  padding-right: 158px;
+  padding-bottom: 9px;
+  padding-left: 213px;
+  /*margin-top: 15em;*/
+  height: 45px;
+}
+
+.surf-search {
+  margin: auto;
+  margin-top: 20em;
+  margin-left: 30em;
+  padding-top: 9px;
+  padding-right: 158px;
+  padding-bottom: 9px;
+  padding-left: 213px;
+  height: 45px;
+}

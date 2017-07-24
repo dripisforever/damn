@@ -19,7 +19,7 @@ import NewPost from '../views/NewPost';
 import Locations from '../views/Locations';
 import Tags from '../views/Tags';
 import Explore from '../views/Explore';
-
+import Surf from '../views/Surf';
 import requireAuth from './requireAuth';
 
 const createRoutes = (store) => {
@@ -27,7 +27,9 @@ const createRoutes = (store) => {
   const history = syncHistoryWithStore(browserHistory, store);
   return (
     <Router history={history} render={applyRouterMiddleware(useScroll())}>
+      <Route path="/surfer" component={Surf} />
       <Route path="/" component={MainLayout}>
+
         <IndexRoute component={requireAuth(Home)} />
         <Route path="/signup" component={SignUp} />
         <Route path="/signin" component={SignIn} />
@@ -37,7 +39,9 @@ const createRoutes = (store) => {
         <Route path="/explore/tags/:tagName" component={requireAuth(Tags)} />
         <Route path="/explore" component={requireAuth(Explore)} />
         <Route path="/:username" component={requireAuth(Profile)} />
+
       </Route>
+
     </Router>
   );
 };
