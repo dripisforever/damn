@@ -13,16 +13,17 @@ class SearchBar extends React.Component {
   render() {
     return (
       <form action="/search" acceptCharset="UTF-8" method="get">
+
         <input name="utf8" type="hidden" value="√" />
         <div className="search-logo" >
-          <i className="fa fa-search"></i>
+          <i className="fa fa-globe Header__nav-icon" aria-hidden="true"/>
         </div>
         <input
           onFocus={() => this.props.showDropdown()}
           onBlur={() => this.props.hideDropdown()}
           value={this.props.term}
           onChange={(event) => {this.handleInputChange(event.target.value)}}
-          placeholder="Search"
+          placeholder="Surf"
           autoComplete="off"
           type="search"
           name="search[q]"

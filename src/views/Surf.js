@@ -7,6 +7,7 @@ class Surf extends React.Component {
     return (
       <div className="surf-search">
         {/* <SearchBar /> */}
+        <i className="fa fa-globe Header__nav-icon" aria-hidden="true"/>
         <SearchContainer />
       </div>
 

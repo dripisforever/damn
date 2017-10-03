@@ -47,6 +47,7 @@ class Header extends React.Component {
           <div className="row  Header__container">
             <div className="three columns">
               <h1 className="Header__logo">
+                {/* <Link to="/surf" className="Header__logo-link">  */}
                 <Link to="/" className="Header__logo-link">
                   <i className="fa fa-eye Header__instagram-icon" aria-hidden="true"/> VIEWS</Link>
               </h1>

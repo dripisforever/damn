@@ -1,5 +1,6 @@
 import React from 'react';
 import SearchUserListItem from './SearchUserListItem';
+import SearchWebsiteListItem from './SearchWebsiteListItem';
 class SearchResultsList extends React.Component {
 
   render() {
@@ -15,6 +16,7 @@ class SearchResultsList extends React.Component {
 
         {this.renderUserHeading()}
         {this.renderUsers()}
+        {this.renderWebsites()}
 
       </ul>
     );
@@ -26,7 +28,11 @@ class SearchResultsList extends React.Component {
     });
   }
 
-
+  renderWebsites() {
+    return this.props.websites.slice(0.3).map((user) => {
+      return <SearchWebsiteListItem key={website.id} website={website} />
+    })
+  }
 
 
 

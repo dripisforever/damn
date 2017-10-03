@@ -20,11 +20,13 @@ class SearchContainer extends React.Component {
     this.setState({ term });
     return axios({
       method: 'GET',
-      url: `${API_URL}/users/search?q=${term}`
+      url: `${API_URL}/surf?q=${term}`
+      // url: `${API_URL}/users/search?q=${term}`
     })
     .then(({data}) => {
       this.setState({
-        users: data.users
+        users: data.users,
+        website: data.websites
       });
     });
   }
@@ -49,7 +51,7 @@ class SearchContainer extends React.Component {
 
   render () {
     return (
-      <div>
+      <div id="surf">
         <SearchBar
           showDropdown={this.showDropdown}
           hideDropdown={this.hideDropdown}
