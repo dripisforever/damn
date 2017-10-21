@@ -27,8 +27,8 @@ const createRoutes = (store) => {
   const history = syncHistoryWithStore(browserHistory, store);
   return (
     <Router history={history} render={applyRouterMiddleware(useScroll())}>
-      <Route path="/surf" component={Surf} />
-      <Route path="/" component={MainLayout}>
+      <Route path="/" component={Surf} />
+      <Route path="/feed" component={MainLayout}>
 
         <IndexRoute component={requireAuth(Home)} />
         <Route path="/signup" component={SignUp} />

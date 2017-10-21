@@ -1,20 +1,32 @@
-input#search_q, input[type="search"] {
-  /*margin-left: 10em;*/
-  padding-top: 9px;
-  padding-right: 158px;
-  padding-bottom: 9px;
-  padding-left: 213px;
-  /*margin-top: 15em;*/
-  height: 45px;
-}
+
 
 .surf-search {
   margin: auto;
   margin-top: 20em;
-  margin-left: 30em;
+  margin-left: 16em;
+  /*padding: 10px 20px;*/
   padding-top: 9px;
   padding-right: 158px;
   padding-bottom: 9px;
   padding-left: 213px;
   height: 45px;
+}
+img.SALAM {
+    height: 30px;
+    position: absolute;
+    left: 46em;
+    top: 2em;
+}
+.surf-search input#search_q, input[type="search"] {
+    /* margin-left: 10em; */
+    padding-top: 9px;
+    /* padding-right: 158px; */
+    padding-bottom: 9px;
+    padding-left: 0;
+    padding: 10px 20px;
+    /* margin-top: 15em; */
+    background-color: white;
+    height: 50px;
+    width: 42em;
+    box-shadow: 0 7px 24px rgba(0,0,0,0.1);
 }

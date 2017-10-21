@@ -3,10 +3,10 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
-    "react-scripts": "0.2.0",
     "actioncable": "5.0.0",
     "axios": "0.13.1",
     "classnames": "2.2.5",
+    "elasticsearch": "^13.3.1",
     "lodash": "4.14.1",
     "material-ui": "0.15.4",
     "moment": "2.14.1",
@@ -20,6 +20,7 @@
     "react-router": "2.6.1",
     "react-router-redux": "4.0.5",
     "react-router-scroll": "0.3.1",
+    "react-scripts": "0.2.0",
     "redux": "3.5.2",
     "redux-form": "5.3.2",
     "redux-thunk": "2.1.0"

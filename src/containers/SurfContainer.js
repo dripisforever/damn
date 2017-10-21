@@ -1,11 +1,11 @@
 import React from 'react';
 
-import SearchBar from './SearchBar';
-import SearchResultsList from './SearchResultsList';
+import SurfBar from '../components/SurfBar';
+import SearchResultsList from '../components/SearchResultsList';
 import { API_URL } from '../config/constants';
 import axios from 'axios';
 // import '../styles/Searchbar.css';
-class SearchContainer extends React.Component {
+class SurfContainer extends React.Component {
   constructor(props) {
     super(props)
 
@@ -25,7 +25,7 @@ class SearchContainer extends React.Component {
     })
     .then(({data}) => {
       this.setState({
-        users: data.hits.hits[1]._source,
+        users: data.hits.hits,
         website: data.websites
       });
     });
@@ -51,8 +51,8 @@ class SearchContainer extends React.Component {
 
   render () {
     return (
-      <div id="surf">
-        <SearchBar
+      <div id="surf-container">
+        <SurfBar
           showDropdown={this.showDropdown}
           hideDropdown={this.hideDropdown}
           term={this.state.term}
@@ -78,4 +78,4 @@ class SearchContainer extends React.Component {
     );
   }
 }
-export default SearchContainer;
+export default SurfContainer;

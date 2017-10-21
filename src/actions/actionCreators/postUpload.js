@@ -39,7 +39,7 @@ export const uploadPost = ({ caption, filter, address, lat, lng, placeId, filter
       type: POST_UPLOAD_SUCCESS,
       payload: data.post,
     });
-    dispatch(push('/'));
+    dispatch(push('/feed'));
   })
   .catch(response => {
     console.log('post upload failed', response);

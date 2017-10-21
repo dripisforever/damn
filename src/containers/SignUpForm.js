@@ -6,6 +6,7 @@ import ErrorMessages from '../components/ErrorMessages';
 import '../styles/SignUpForm.css';
 
 class SignUpForm extends React.Component {
+
   renderError(field) {
     if (field.touched && field.error) {
       return (
@@ -37,7 +38,7 @@ class SignUpForm extends React.Component {
         <fieldset>
           <input
             type="text"
-            placeholder="Username"
+            placeholder="Username or email"
             className="SignUpForm__input"
             {...username}
           />

@@ -232,7 +232,7 @@ input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
   color: #FFF;
   background-color: #1EAEDB;
-  border-color: #1EAEDB; }
+  border-color: #fff; }
 
 
 /* Forms
@@ -249,7 +249,7 @@ select {
   height: 38px;
   padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
   background-color: #fff;
-  border: 1px solid #D1D1D1;
+  border: 1px solid #fff;
   border-radius: 4px;
   box-shadow: none;
   box-sizing: border-box; }
@@ -278,7 +278,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  border: 1px solid #33C3F0;
+  border: 1px solid #f6f6f6;
   outline: 0; }
 label,
 legend {
@@ -295,6 +295,10 @@ label > .label-body {
   display: inline-block;
   margin-left: .5rem;
   font-weight: normal; }
+.SignIn__form-wrapper input {
+  border: 1px solid #dbdbdb;
+}
+
 
 
 /* Lists

@@ -1,7 +1,9 @@
 .SignInForm__input {
   width: 100%;
 }
-
+.SignIn__form-wrapper input {
+  border: 1px solid #dbdbdb;
+}
 .SignInForm__button,
 .SignInForm__button:hover {
   display: block;

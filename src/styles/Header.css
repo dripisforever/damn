@@ -93,7 +93,8 @@
   /*width: 177px;
   padding: 10px 60px;*/
   width: 15em;
-  padding: 10px 81px;
+  /*padding: 10px 81px;*/
+  padding: 10px 20px;
 }
 .search-logo {
     position: absolute;

@@ -28,7 +28,7 @@ export const userSignUp = ({email, username, password}) => (dispatch) => {
       type: USER_SIGN_UP_SUCCESS,
       payload: data.user,
     });
-    dispatch(push('/'));
+    dispatch(push('/feed'));
     createConsumerWithToken(data.user.authenticationToken);
     WebNotifications.subscribe((data) => {
       dispatch(handleNotificationReceived(data.notification))
@@ -56,7 +56,7 @@ export const userSignIn = (credentials) => (dispatch) => {
       type: USER_SIGN_IN_SUCCESS,
       payload: data.user,
     });
-    dispatch(push('/'));
+    dispatch(push('/feed'));
     createConsumerWithToken(data.user.authenticationToken);
     WebNotifications.subscribe((data) => {
       dispatch(handleNotificationReceived(data.notification))
@@ -86,7 +86,7 @@ export const facebookLogin = ({id, username, email}) => (dispatch) => {
       type: FACEBOOK_LOGIN_SUCCESS,
       payload: data.user,
     });
-    dispatch(push('/'));
+    dispatch(push('/feed'));
     createConsumerWithToken(data.user.authenticationToken);
     WebNotifications.subscribe((data) => {
       dispatch(handleNotificationReceived(data.notification))

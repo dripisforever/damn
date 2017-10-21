@@ -16,7 +16,7 @@ class SearchResultsList extends React.Component {
 
         {this.renderUserHeading()}
         {this.renderUsers()}
-        {this.renderWebsites()}
+        {/* {this.renderWebsites()} */}
 
       </ul>
     );
@@ -28,11 +28,11 @@ class SearchResultsList extends React.Component {
     });
   }
 
-  renderWebsites() {
-    return this.props.websites.slice(0.3).map((user) => {
-      return <SearchWebsiteListItem key={website.id} website={website} />
-    })
-  }
+  // renderWebsites() {
+  //   return this.props.websites.slice(0.3).map((user) => {
+  //     return <SearchWebsiteListItem key={website.id} website={website} />
+  //   })
+  // }
 
 
 

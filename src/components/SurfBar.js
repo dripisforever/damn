@@ -1,6 +1,6 @@
 import React from 'react';
-// import '../styles/Searchbar.css';
-class SearchBar extends React.Component {
+import '../styles/Surfbar.css';
+class SurfBar extends React.Component {
   constructor(props) {
     super(props);
     this.handleInputChange = this.handleInputChange.bind(this);
@@ -12,10 +12,10 @@ class SearchBar extends React.Component {
 
   render() {
     return (
-      <form action="/search" method="get">
+      <form action="/search" acceptCharset="UTF-8" method="get">
 
         {/* <input name="utf8" type="hidden" value="√" /> */}
-        <div className="search-logo" >
+        <div className="surf-logo" >
           <i className="fa fa-globe Header__nav-icon" aria-hidden="true"/>
         </div>
         <input
@@ -23,7 +23,7 @@ class SearchBar extends React.Component {
           onBlur={() => this.props.hideDropdown()}
           value={this.props.term}
           onChange={(event) => {this.handleInputChange(event.target.value)}}
-          placeholder="Surf"
+          placeholder="search"
           autoComplete="off"
           type="search"
           name="q"
@@ -35,4 +35,4 @@ class SearchBar extends React.Component {
 
 }
 
-export default SearchBar;
+export default SurfBar;
