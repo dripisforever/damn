@@ -8,13 +8,13 @@ class SearchResultsList extends React.Component {
       <ul className="dropdown-menu" id="autocomplete-items" onMouseEnter={() => {this.props.setPreventHideDropdown()}} onMouseLeave={() => {this.props.resetPreventHideDropdown()}}>
         <span className="dropdown-arrow-top"></span>
         <span className="dropdown-arrow-bottom"></span>
-        <li>
+        {/* <li>
           <a href={`/search?q=${this.props.term}`}>
             <i className="fa fa-search"></i> Search for <strong>{this.props.term}</strong>
           </a>
-        </li>
+        </li> */}
 
-        {this.renderUserHeading()}
+        {/* {this.renderUserHeading()} */}
         {this.renderUsers()}
         {/* {this.renderWebsites()} */}
 

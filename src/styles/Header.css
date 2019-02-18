@@ -219,16 +219,19 @@ i.fa.fa-search {
 #autocomplete-items {
   position: absolute;
   list-style: none;
-  padding: 6px 8px;
-  width: 300px;
+  /*padding: 6px 8px;*/
+  box-shadow: 0 7px 24px rgba(0,0,0,0.3);
+  width: 42em;
   background: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  /*border: 1px solid rgba(0, 0, 0, 0.1);*/
   border-radius: 3px;
   z-index: 20;
   display: block;
   li {
+    margin-left: 3em;
     padding: 4px 10px;
     a {
+      text-decoration: none;
       color: $light-font-color;
       font-size: 12px;
       padding: 3px 0 !important;
